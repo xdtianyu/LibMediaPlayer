@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'mediaplayer'
+
+    publishedGroupId = 'org.xdty.media'
+    libraryName = 'MediaPlayer'
+    artifact = 'mediaplayer'
+
+    libraryDescription = 'An android media player based on ijkplayer'
+
+    siteUrl = 'https://github.com/xdtianyu/LibMediaPlayer'
+    gitUrl = 'https://github.com/xdtianyu/LibMediaPlayer'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'xdtianyu'
+    developerName = 'xdtianyu'
+    developerEmail = 'xdtianyu@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "0.0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.4.4.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.4.4.1'
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
