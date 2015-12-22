@@ -38,14 +38,7 @@ PlayerActivity.intentTo(this,
 
 For more details, see [example](https://github.com/xdtianyu/LibMediaPlayer/tree/master/example)
 
-## Custom jkplayer-armv7a
+## Using your own jkplayer-armv7a builds
 
-1\. Put *.so files in your module's directory `app/src/main/jniLibs/armeabi`
+Put *.so files in your module's directory `app/src/main/jniLibs/armeabi-v7a`, then clean project and build again.
 
-2\. Exclude `ijkplayer-armv7a` module in `build.gradle`
-
-```
-compile ('org.xdty.media:mediaplayer:0.0.1') {
-    exclude group: 'tv.danmaku.ijk.media', module: 'ijkplayer-armv7a'
-}
-```
