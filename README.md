@@ -1,6 +1,7 @@
 # LibMediaPlayer
 An android media player library based on ijkplayer
 
+[![Build Status](https://travis-ci.org/xdtianyu/LibMediaPlayer.svg?branch=master)](https://travis-ci.org/xdtianyu/LibMediaPlayer)
 [![JAR](https://img.shields.io/maven-central/v/org.xdty.media/mediaplayer.svg)](http://central.maven.org/maven2/org/xdty/media/mediaplayer/)
 [ ![Download](https://api.bintray.com/packages/xdtianyu/maven/mediaplayer/images/download.svg) ](https://bintray.com/xdtianyu/maven/mediaplayer/_latestVersion)
 
